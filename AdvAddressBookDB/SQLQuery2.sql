@@ -1,6 +1,6 @@
 ﻿-----------------Creating the DataBase AddressBook (UC1)-----------------
-create database AdvAddressBookDB;
-use AdvAddressBookDB;
+create database AddressBook
+use AddressBook
 
 -----------------Creating the AddressBook Table (UC2)--------------------
 Create Table AddressBook(
@@ -12,7 +12,7 @@ Create Table AddressBook(
 	ZipCode int,
 	PhoneNum bigint,
 	EmailId varchar(50)
-);
+)
 
 ------------------Inserting Value Into AddressBook Table (UC3)--------------
 Insert Into AddressBook Values('Niraj', 'Kumar', 'Namkom', 'Ranchi', 'Jharkhand', 834010, 7004670887, 'nk321626@gmail.com'),
@@ -20,3 +20,10 @@ Insert Into AddressBook Values('Niraj', 'Kumar', 'Namkom', 'Ranchi', 'Jharkhand'
 						('Rani', 'Gupta', 'MadhuBazzar', 'Chaibasa', 'Jharkhand', 833201, 7004678878, 'Rani1029@gmail.com'),	
 						('Rakesh', 'Kumar', 'Kasba', 'Purnea', 'Bihar', 854330, 9852364170, 'abc852@gmail.com'),	
 						('Prem', 'Kamal', 'Daltonganj', 'Palamu', 'jharkhand', 822102, 9852741630, 'Prem741@gmail.com');
+
+------------------Edit Existing AddressBook Table Using Update (UC4)--------------
+Update AddressBook Set EmailId='mansi@yahoo.com' Where FirstName='Rani';
+Update AddressBook Set Address='Gandhinagar', City = 'Patna', StateName = 'Bihar' Where FirstName='Prem';
+Update AddressBook Set Phonenum=7415986320 Where FirstName='Rakesh';
+Update AddressBook Set LastName='Kumar' Where FirstName='Prem';
+select * from AddressBook
