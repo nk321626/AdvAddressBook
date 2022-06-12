@@ -36,3 +36,6 @@ Select * From AddressBook Where City='Daltonganj' Or StateName='Jharkhand';
 
 ----------------------Ability To Get The Size Of AddressBook By City And State Using Count(UC7)---------------------------------
 Select Count(*) As Count,StateName,City From AddressBook Group By StateName,City;
+
+--------------------------------------Retrive Sorted Persons Records By City(UC8)------------------------------------------------
+Select * From AddressBook Where City = 'Daltonganj' Order By FirstName;
