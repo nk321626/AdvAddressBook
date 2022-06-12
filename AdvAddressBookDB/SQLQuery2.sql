@@ -30,3 +30,6 @@ select * from AddressBook
 ---------------------------------------Delete Existing Contact From Table(UC5)-----------------------------------------------
 Delete From AddressBook Where FirstName='Rakesh' And LastName = 'Kumar';
 select * from AddressBook
+
+--------------------------------Retrieve Person Record From Table By City Or State(UC6)---------------------------------------
+Select * From AddressBook Where City='Daltonganj' Or StateName='Jharkhand'; 
