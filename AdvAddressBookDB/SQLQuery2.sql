@@ -27,3 +27,6 @@ Update AddressBook Set Address='Gandhinagar', City = 'Patna', StateName = 'Bihar
 Update AddressBook Set Phonenum=7415986320 Where FirstName='Rakesh';
 Update AddressBook Set LastName='Kumar' Where FirstName='Prem';
 select * from AddressBook
+---------------------------------------Delete Existing Contact From Table(UC5)-----------------------------------------------
+Delete From AddressBook Where FirstName='Rakesh' And LastName = 'Kumar';
+select * from AddressBook
