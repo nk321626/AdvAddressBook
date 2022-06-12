@@ -33,3 +33,6 @@ select * from AddressBook
 
 --------------------------------Retrieve Person Record From Table By City Or State(UC6)---------------------------------------
 Select * From AddressBook Where City='Daltonganj' Or StateName='Jharkhand'; 
+
+----------------------Ability To Get The Size Of AddressBook By City And State Using Count(UC7)---------------------------------
+Select Count(*) As Count,StateName,City From AddressBook Group By StateName,City;
